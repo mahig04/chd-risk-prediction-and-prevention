@@ -43,7 +43,7 @@ Accuracy, Precision, Recall, F1-score and ROC-AUC. Class imbalance is handled on
 
 ## 📊 Dataset
 
-The project will use an open-source heart disease dataset such as:
+The project will use the following open-source dataset:
 
 * Framingham Heart Study dataset (primary dataset)
 
