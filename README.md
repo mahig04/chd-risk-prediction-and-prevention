@@ -47,7 +47,6 @@ The project will use the following open-source dataset:
 
 * Framingham Heart Study dataset (primary dataset)
 
-
 ## 🔄 Proposed Workflow
 
 Patient Clinical & Lifestyle Data
