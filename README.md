@@ -11,7 +11,7 @@ The system will also provide explainable insights about the factors contributing
 * Predict the risk of Coronary Heart Disease using machine learning.
 * Preprocess clinical and lifestyle data.
 * Compare different machine learning models.
-* Explain model predictions using SHAP/LIME.
+* Explain model predictions using SHAP.
 * Generate personalized preventive recommendations.
 * Develop an interactive web dashboard.
 
@@ -35,14 +35,18 @@ The project will compare:
 * Random Forest
 * XGBoost
 * Support Vector Machine (SVM)
-* Voting Ensemble
+
+## 📏 Evaluation Metrics
+
+Accuracy, Precision, Recall, F1-score and ROC-AUC. Class imbalance is handled on the training data only, to prevent data leakage.
+
 
 ## 📊 Dataset
 
 The project will use an open-source heart disease dataset such as:
 
-* Framingham Heart Study
-* UCI Heart Disease Dataset
+* Framingham Heart Study dataset (primary dataset)
+
 
 ## 🔄 Proposed Workflow
 
@@ -56,7 +60,7 @@ Machine Learning Models
 ↓
 CHD Risk Prediction
 ↓
-SHAP/LIME Explanation
+SHAP Explanation
 ↓
 Preventive Recommendations
 ↓
