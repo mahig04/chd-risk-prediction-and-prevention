@@ -87,7 +87,7 @@ This project is an academic machine learning prototype and is not intended to re
 ## 👩‍💻 Team
 
 * Mahi Garg
-* Pooja Kaur
+* Pooja Kaur : Literature review, recommendations, UI
 * Kunal Gautam
 * Sunny Yadav
 
