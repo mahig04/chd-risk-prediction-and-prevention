@@ -35,6 +35,8 @@ The project will compare:
 * Random Forest
 * XGBoost
 * Support Vector Machine (SVM)
+* Voting Ensemble (optional)
+
 
 ## 📏 Evaluation Metrics
 
