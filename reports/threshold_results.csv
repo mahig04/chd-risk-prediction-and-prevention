@@ -1,0 +1,5 @@
+Model,Best-F1 threshold,Precision,Recall,F1,F1 at 0.50,Recall at 0.50
+Logistic Regression,0.55,0.286,0.584,0.384,0.384,0.685
+Random Forest,0.5,0.273,0.583,0.372,0.372,0.583
+XGBoost,0.55,0.288,0.515,0.37,0.368,0.608
+SVM,0.55,0.285,0.617,0.39,0.383,0.699
