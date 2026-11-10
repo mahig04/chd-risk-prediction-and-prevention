@@ -1,0 +1,5 @@
+Model,Best CV ROC-AUC,Best params
+Logistic Regression,0.731,{'C': 0.006026889128682512}
+Random Forest,0.716,"{'n_estimators': 200, 'min_samples_leaf': 10, 'max_depth': 5}"
+XGBoost,0.71,"{'subsample': 0.85, 'n_estimators': 100, 'max_depth': 2, 'learning_rate': 0.05}"
+SVM,0.729,"{'C': 3.142880890840109, 'gamma': 0.0026587543983272706}"
