@@ -39,7 +39,28 @@ RULES = [
      "NHLBI/NCEP total cholesterol categories"),
     ("R6", lambda p: p["totChol"] >= 240,
      "Your total cholesterol is high. Please see a doctor for a full lipid profile.",
-     "NHLBI/NCEP total cholesterol categories"),
+     "NHLBI/NCEP total cholesterol categories"),  
+    ("R7", lambda p: p["cigsPerDay"] > 0 or p["currentSmoker"] == 1,
+     "Smoking raises coronary heart disease risk. Quitting helps at any age, and the risk of "
+     "heart attack falls sharply within 1-2 years of quitting. A doctor or a quit-smoking "
+     "programme can help.",
+     "CDC: Health effects of smoking on the heart; benefits of quitting"),
+    ("R8a", lambda p: 25 <= p["BMI"] < 30,
+     "Your BMI is in the overweight range (25 or above). Gradual weight management through diet "
+     "and physical activity is advised. BMI cut-offs may under-estimate risk in some Asian populations.",
+     "WHO obesity and overweight fact sheet"),
+    ("R8b", lambda p: p["BMI"] >= 30,
+     "Your BMI is in the obesity range (30 or above). Please discuss a weight management plan "
+     "with a healthcare professional. BMI cut-offs may under-estimate risk in some Asian populations.",
+     "WHO obesity and overweight fact sheet"),
+    ("R9a", lambda p: 100 <= p["glucose"] < 126,
+     "If this glucose value was measured while fasting, it falls in the prediabetes range. "
+     "One value cannot diagnose anything. Ask a doctor about a fasting glucose or HbA1c test.",
+     "ADA diagnostic criteria"),
+    ("R9b", lambda p: p["glucose"] >= 126,
+     "If this glucose value was measured while fasting, it falls in the diabetes range. "
+     "One value cannot diagnose anything. Please see a doctor to confirm with a repeat test.",
+     "ADA diagnostic criteria"),
     ("R10", lambda p: p["prevalentHyp"] == 1 or p["BPMeds"] == 1,
      "Keep following your doctor's treatment plan and monitor your blood pressure regularly, "
      "including at home if advised.",
